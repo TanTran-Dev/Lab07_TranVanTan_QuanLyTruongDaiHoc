@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab07_TranVanTan_QuanLyTruongDaiHoc</string>
+    <string name="ma_truong">Mã Trường</string>
+    <string name="ten_truong">Tên Trường</string>
+    <string name="text_them">Thêm</string>
+    <string name="text_huy">Huỷ</string>
+</resources>

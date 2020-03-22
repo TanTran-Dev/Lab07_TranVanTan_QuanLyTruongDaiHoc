@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".view.QLTruongDaiHocActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:text="QUẢN LÝ KHOA"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnTruongHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:maxLength="30"
+        android:inputType="textPersonName"
+        android:id="@+id/edtTenKhoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên khoa" />
+
+    <EditText
+        android:maxLength="5"
+        android:id="@+id/edtToaNha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Toà nhà" />
+
+    <EditText
+        android:maxLength="11"
+        android:inputType="number"
+        android:id="@+id/edtSoDienThoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại" />
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_them" />
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnHuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_huy" />
+    </LinearLayout>
+
+    <ListView
+        android:background="@color/list_view_color"
+        android:id="@+id/lvKhoa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
